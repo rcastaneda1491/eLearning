@@ -75,8 +75,8 @@ a{
 @media only screen and (max-width: 768px){
     #container{
         flex-direction: column;
-        height: 80%;
-        width: 70%;
+        height: 90%;
+        width: 90%;
     }
 
     #info-section{
@@ -122,10 +122,6 @@ a{
 }
 
 @media only screen and (max-width: 425px){
-    /*#info-section{
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }*/
 
     #logo{
         width: 60px;
