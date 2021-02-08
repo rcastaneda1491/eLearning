@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pantallacurso.css">
+    <title>Pantalla de los cursos</title>
+</head>
+
+<body>
+    <nav id="nav-bar">
+        <div id="navlogo-container">
+            <img id="logo" src="../img/nav-logo.svg" alt="Logo">
+        </div>
+        <input type="checkbox" id="menu">
+        <label for="menu"><img src="../img/menu.svg" alt="Menu"></label>
+        <div id="nav-items">
+            <ul>
+                <li><a class="nav-item" id="selected" href="#">Inicio</a></li>
+                <li><a class="nav-item" href="#">Suscripciones</a></li>
+                <li><a class="nav-item" href="#">Categorías</a></li>
+                <li><a class="login-register" href="#">Ingresar</a></li>
+                <li><a class="login-register" href="#">Registrarse</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="texto_card">
+        <div id="course">
+            <img id="course-image" src="../img/algoritmos.svg" alt="Algoritmos">
+            <a id="login" href="#">Inscribirse</a>
+        </div>
+        <div id="texto_informacion">
+            <br>
+            <br>
+            <h1>Uso de Registros</h1>
+            <h2>Descripción del curso</h2>
+            <p>En este curso aprenderemos como un registro es un tipo de dato estructurado que nos permite agrupar un
+                número finito de datos los cuales denominamos campos, aprenderemos a usar los registros y a poder
+                acceder a ellos mediante variables.</p>
+        </div>
+    </div>
+    <div id="title-courses">
+        <h2 id="cursos_recomendados">Cursos recomendados:</h2>
+    </div>
+    <div class="container-card">
+        <div class="div-card">
+            <a class="card" href="./ciclos.html">
+                <img src="../img/algoritmos.svg" alt="Algoritmos" style="width: 100%;">
+                <div class="card_container">
+                    <h4>Condicionales y Ciclos</h4>
+                </div>
+            </a>
+        </div>
+        <div class="div-card">
+            <a class="card" href="./datos.html">
+                <img src="../img/algoritmos.svg" alt="Algoritmos" style="width: 100%;">
+                <div class="card_container">
+                    <h4>Tipos de datos</h4>
+                </div>
+            </a>
+        </div>
+        <div class="div-card">
+            <a class="card" href="./funciones.html">
+                <img src="../img/algoritmos.svg" alt="Algoritmos" style="width: 100%;">
+                <div class="card_container">
+                    <h4>Uso de Funciones</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer id="pie-pagina">
+        <p id="derechos">eLearning | Terminos y Condiciones</p>
+    </footer>
+</body>
+
+</html>

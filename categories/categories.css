@@ -72,6 +72,7 @@ ul{
 
 h2{
     padding-left: 8%;
+    margin-top: 58px;
 }
 
 .categories-item{
@@ -79,6 +80,11 @@ h2{
     display: flex;
     align-items: center;
     color: black;
+}
+
+.categories-item:hover{
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.4);
+    color:  #e4e3e6;
 }
 
 #one{
@@ -117,10 +123,10 @@ h2{
         'categorie1 categorie2'
         'categorie3 categorie4'
         'categorie5 categorie6';
-    grid-gap: 30px;
+    grid-gap: 45px;
     padding-right: 8%;
     padding-left: 8%;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .categorie-container{

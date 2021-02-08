@@ -15,7 +15,7 @@ a{
 }
 
 #navlogo-container{
-    width: 50%;
+    width: 45%;
     display: flex;
     justify-content: flex-start;
     margin-top: 10px;
@@ -23,7 +23,7 @@ a{
 }
 
 #nav-items{
-    width: 50%;
+    width: 55%;
     font-size: 17px;
 }
 
@@ -53,10 +53,6 @@ ul{
     color: white;
 }
 
-#selected{
-    color:  #7F62F1;
-}
-
 #logo{
     width: 35px;
 }
@@ -70,40 +66,57 @@ ul{
     font-size: 17px;
 }
 
-#main-div{
+
+#pie-pagina {
+    padding-left: 40px;
+    background-color: #201F24;
+    justify-content: flex-start;
+    align-items: center;
     display: flex;
+    font-size: 15px;
+    color: white;
+}
+
+#course{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#login{
     background-color: #6644ED;
-    justify-content: center;
-    align-items: center;
+    color: white;
+    margin-top: 15px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 40px;
+    font-size: 20px;
 }
 
-#main-text{
-    width: 50%;
-    padding: 0px 70px 0px 70px;
-}
-
-#main-images{
-    width: 50%;
+#texto_card{
     display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-right: 40px;
-}
-
-#main-logo-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#main-logo{
-    height: 100px;
-}
-
-#title-courses{
-    padding: 0 10% 0 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 50px;
     margin-top: 50px;
+}
+
+#texto_informacion{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 65%;
+    font-size: 20px;
+    padding-left: 4%;
+}
+
+h2{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#cursos_recomendados{
+    padding-left: 10%;
 }
 
 .container-card {
@@ -111,7 +124,7 @@ ul{
     padding: 0 10% 0 10%;
     align-items: center;
     justify-content: space-around;
-    margin: 40px 0 40px 0;
+    margin: 60px 0 60px 0;
 }
 
 .div-card {
@@ -140,16 +153,6 @@ ul{
     text-align: center;
 }
 
-#pie-pagina {
-    padding-left: 40px;
-    background-color: #201F24;
-    justify-content: flex-start;
-    align-items: center;
-    display: flex;
-    font-size: 15px;
-    color: white;
-}
-
 @media only screen and (max-width: 1200px) {
     #navlogo-container{
         width: 35%;
@@ -158,35 +161,9 @@ ul{
     #nav-items{
         width: 65%;
     }
-
-    #main-text{
-        width: 35%;
-    }
-
-    #main-images{
-        width: 65%;
-    }
-
-    #main-div{
-        padding: 20px 0px 20px 0px;
-    }
 }
 
 @media only screen and (max-width: 950px) {
-    #main-div{
-        padding: 35px 120px 35px 120px;
-        flex-direction: column;
-    }
-    #main-text{
-        width: 100%;
-    }
-
-    #main-images{
-        width: 100%;
-        margin-bottom: 0;
-        margin-right: 0;
-    }
-
     #navlogo-container{
         width: 22%;
     }
@@ -230,8 +207,8 @@ ul{
     .container-card{
         flex-direction: column;
         justify-content: center;
-        margin-top: 0;
         padding: 0;
+        margin-top: 10px;
     }
 
     #main-text{
@@ -266,10 +243,16 @@ ul{
         align-items: center;
         padding: 20px;
     }
-}
+    
+    #texto_card{
+        flex-direction: column;
+    }
 
-@media only screen and (max-width: 650px) {
-    #main-images{
-        display: none;
+    #course-image{
+        width: 100%;
+    }
+
+    #texto_informacion {
+        width: 100%;
     }
 }
