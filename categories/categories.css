@@ -1,0 +1,277 @@
+body{
+    margin: 0;
+    font-size: 24px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#nav-bar{
+    background-color: #201F24;
+    display: flex;
+    padding: 0 50px 0 50px;
+    box-shadow: 0 10px 8px 0 rgba(0,0,0,.2);
+}
+
+#navlogo-container{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#nav-items{
+    width: 50%;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+#menu{
+    display: none;
+}
+
+label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #ffffff;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    justify-self: flex-end;
+}
+
+.nav-item{
+    color: white;
+}
+
+#selected{
+    color:  #7F62F1;
+}
+
+#logo{
+    width: 35px;
+}
+
+.login-register{
+    background-color: #7F62F1;
+    color: white;
+    margin-bottom: 10px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 40px;
+    font-size: 17px;
+}
+
+h2{
+    padding-left: 8%;
+}
+
+.categories-item{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+#one{
+    grid-area: categorie1;
+    background-color: #6644ED;
+}
+
+#two{
+    grid-area: categorie2;
+    background-color: #7F62F1;
+}
+
+#three{
+    grid-area: categorie3;
+    background-color: #7F62F1;
+}
+
+#four{
+    grid-area: categorie4;
+    background-color: #6644ED;
+}
+
+#five{
+    grid-area: categorie5;
+    background-color: #6644ED;
+}
+
+#six{
+    grid-area: categorie6;
+    background-color: #7F62F1;
+}
+
+#grid{
+    display: grid;
+    grid-template-areas:
+        'categorie1 categorie2'
+        'categorie3 categorie4'
+        'categorie5 categorie6';
+    grid-gap: 30px;
+    padding-right: 8%;
+    padding-left: 8%;
+    margin-bottom: 50px;
+}
+
+.categorie-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-right: 2px solid black;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.categorie-title{
+    padding-left: 30px;
+}
+
+#pie-pagina {
+    padding-left: 40px;
+    background-color: #201F24;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+    #navlogo-container{
+        width: 35%;
+    }
+
+    #nav-items{
+        width: 65%;
+    }
+}
+
+
+@media only screen and (max-width: 950px) {
+    #navlogo-container{
+        width: 22%;
+    }
+    
+    #nav-items{
+        width: 78%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #grid{
+        grid-template-areas:
+            'categorie1'
+            ' categorie2'
+            'categorie3' 
+            'categorie4'
+            'categorie5'
+            'categorie6';
+    }
+    #one{
+        grid-area: categorie1;
+        background-color: #6644ED;
+    }
+    
+    #two{
+        grid-area: categorie2;
+        background-color: #7F62F1;
+    }
+    
+    #three{
+        grid-area: categorie3;
+        background-color: #6644ED;
+    }
+    
+    #four{
+        grid-area: categorie4;
+        background-color: #7F62F1;
+    }
+    
+    #five{
+        grid-area: categorie5;
+        background-color: #6644ED;
+    }
+    
+    #six{
+        grid-area: categorie6;
+        background-color: #7F62F1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    label{
+        display: inline-flex;
+    }
+
+    #nav-bar{
+        flex-direction: column;
+    }
+
+    #nav-items ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #nav-items li{
+        border-top: 1px solid #ffffff;
+    }
+
+    #menu:checked ~ #nav-items{
+        display: none;
+        margin: 0;
+    }
+
+    #navlogo-container{
+        display: none;
+    }
+
+    #nav-bar{
+        padding: 0 20px 0 20px;
+    }
+
+    #nav-items {
+        width: 90%;
+    }
+
+    #navlogo-container {
+        width: 15%;
+    }
+
+    li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #grid{
+        font-size: 20px;
+    }
+    .categorie-container{
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+
+    .categorie-image{
+        width: 90%;
+    }
+
+    .categories-item{
+        height: 100px;
+    }
+    
+}
